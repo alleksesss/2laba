@@ -1,0 +1,34 @@
+// 3 Лабораторная работа
+// Двумерный динамический массив
+
+#include <iostream> //Организация ввода-вывода
+
+using namespace std; // Пространство имен std
+
+// Объявление переменных
+int n, y, i, j, **x;
+
+int main() // Основное тело программы
+{
+    setlocale(LC_ALL, "Russian");
+    cin >> n;
+    cin >> y;
+    x = new int *[n];
+    for (i = 0; i < n; i++)
+        x[i] = new int[y];
+
+    for (i = 0; i < n; i++)
+        for (j = 0; j < y; j++)
+            x[i][j] = rand() %20;
+
+
+for (i = 0; i < n; i++)
+{
+cout<<"\n";
+        for (j = 0; j < y; j++)
+            cout << "a["<<i<<"]"<<"["<<j<<"] = 4"<<x[i][j]<<"  " ;
+
+
+
+}
+}
